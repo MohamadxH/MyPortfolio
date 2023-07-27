@@ -11,6 +11,23 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- add wow animation -->
     <link rel="stylesheet" href="css/animate.css">
+
+        <!-- lazysizes library from jsDelivr CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
+        <script>
+            // Function to add loading="lazy" attribute to all images
+            function addLazyLoadingToImages() {
+                const images = document.querySelectorAll('img');
+                images.forEach(image => {
+                    image.setAttribute('loading', 'lazy');
+                });
+            }
+    
+            // Call the function after the DOM has loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                addLazyLoadingToImages();
+            });
+        </script>
 </head>
 <body class="dark-mode">
     
