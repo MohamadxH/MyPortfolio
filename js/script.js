@@ -221,7 +221,7 @@ function showImage(e) {
                 // Start the counters when the respective elements come into view
                 startCounter(document.getElementById("box1").querySelector("span"), 1);
                 startCounter(document.getElementById("box2").querySelector("span"), 20);
-                startCounter(document.getElementById("box3").querySelector("span"), 8);
+                startCounter(document.getElementById("box3").querySelector("span"), 17);
                 // startCounter(document.getElementById("box4").querySelector("span"), 1);
             }
         });
